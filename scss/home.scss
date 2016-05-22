@@ -1,0 +1,38 @@
+@import "./_layout";
+
+.container-fluid {
+	margin: 0 auto;
+	padding: 0;
+}
+
+#sec1 {
+	background-image: url("/images/first.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+
+	.form-group {
+		position: absolute;
+		top: 45%;
+		left: 25%;
+		width: 50%;
+
+		input {
+			opacity: .8;
+			border: 1.5px solid $text;
+			border-radius: 0;
+			font-size: 25px;
+			height: 60px;
+		}
+	}
+
+}
+
+
+@media all and (max-width: 767px) {
+  .slider-pro {
+    display: none;
+  }
+}
