@@ -5,13 +5,16 @@
 	padding: 0;
 }
 
+.sections {
+	padding: 90px 10px 10px;
+}
+
 #sec1 {
 	background-image: url("../images/first.jpg");
 	background-size: cover;
 	background-position: center;
 	height: 100%;
 	margin: 0;
-	padding: 0;
 
 	.form-group {
 		position: absolute;
@@ -30,9 +33,45 @@
 
 }
 
+#sec3 {
+	background-image: url("../images/third.jpg");
+	background-size: cover;
+	background-position: center;
+	min-height: 100%;
+	margin: 0;
+	padding-left: 5%;
+	padding-right: 5%;
+
+	h2 {
+		color: #fff;
+	}
+
+	.row { margin: 0; }
+
+	.entrance {
+		background: rgba(255,255,255,.6);
+		margin: 8px;
+		font-size: 25px;
+		font-weight: bold;
+		text-align: center;
+		&.doubleH {
+			padding: 10% 0;
+		}
+		&.singleH {
+			padding: calc(5% - 12px) 0;
+		}
+		&.singleW {
+			width: calc(19% - 8px);
+		}
+		&.doubleW {
+			width: 38%;
+		}
+	}
+}
 
 @media all and (max-width: 767px) {
   .slider-pro {
     display: none;
   }
 }
+
