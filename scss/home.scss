@@ -72,32 +72,34 @@
 	background-position: center;
 	height: 100%;
 	margin: 0;
-	#iconTitle {
+	#sec1-content {
 		position: absolute;
-		top: 25%;
-		left: 25%;
-		font-size: 30px;
-		background: rgba(255,255,255,.6);
-		min-width: 50%;
-		text-align: center;
-		img {
-			display: inline-block;
-		}
-		.icon-text {
-			text-align: left;
-			display: inline-block;
-			vertical-align: middle;
-			padding: 6px 5px 4px;
-		}
-	}
-
-	.form-group {
-		position: absolute;
-		top: 50%;
+		top: 30%;
 		left: 25%;
 		width: 50%;
+		@media all and (max-width: 767px) {
+			width: 90%;
+			left: 5%;
+		}
 
-		input {
+		#iconTitle {
+			font-size: 30px;
+			background: rgba(255,255,255,.6);
+			min-width: 100%;
+			text-align: center;
+			margin-bottom: 50px;
+			img {
+				display: inline-block;
+			}
+			.icon-text {
+				text-align: left;
+				display: inline-block;
+				vertical-align: middle;
+				padding: 6px 5px 4px;
+			}
+		}
+
+		.form-group input{
 			opacity: .8;
 			border: 1.5px solid $text;
 			border-radius: 0;
@@ -123,31 +125,59 @@
 		&.innerH {
 			padding: 30% 0;
 		}
+		@media all and (max-width: 767px) {
+			&.innerH {
+				width: 50%;
+				position: relative;
+				float: left;
+				padding: 10% 0;
+			}
+			&.doubleH { 
+				position: relative; 
+				float: left;
+				width: 100%;
+			}
+		}
 	}
 	#bob-1 {
 		background-image: url("../images/bob-1.png");
 		padding-left: 40%;
 		font-size: 1.5em;
+		@media all and (max-width: 767px) {
+			padding-left: 20%;
+		}
 	}
 	#bob-2 {
 		background-image: url("../images/bob-2.png");
 		padding-left: 50%;
 		font-size: 1em;
+		@media all and (max-width: 767px) {
+			padding-left: 20%;
+		}
 	}
 	#bob-3 {
 		background-image: url("../images/bob-3.png");
 		padding-left: 35%;
 		font-size: 2em;
+		@media all and (max-width: 767px) {
+			padding-left: 20%;
+		}
 	}
 	#bob-4 {
 		background-image: url("../images/bob-4.png");
 		padding-left: 30%;
 		font-size: 1.2em;
+		@media all and (max-width: 767px) {
+			padding-left: 15%;
+		}
 	}
 	#bob-5 {
 		background-image: url("../images/bob-5.png");
 		padding-left: 8%;
 		font-size: 2.5em;
+		@media all and (max-width: 767px) {
+			padding-left: 30%;
+		}
 	}
 }
 
@@ -184,12 +214,10 @@
 		&.doubleW {
 			width: 38%;
 		}
+		@media all and (max-width: 767px) {
+			&.doubleH, &.singleH { padding: 50px; }
+			&.singleW, &.doubleW { width: 45%; }
+		}
 	}
-}
-
-@media all and (max-width: 767px) {
-  .slider-pro {
-    display: none;
-  }
 }
 
