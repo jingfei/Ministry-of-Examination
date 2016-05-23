@@ -7,6 +7,23 @@
 
     {{> header }}
   <div class="container-fluid">
+		<div id="dialog">
+			<div id="dialog-title">
+				<i class="glyphicon glyphicon-certificate"></i> &nbsp;&nbsp;問題傳送門
+			</div>
+			<div id="dialog-content">
+				<div>
+					<i class="glyphicon glyphicon-certificate"></i> &nbsp;&nbsp;問題傳送門
+					<i class="glyphicon glyphicon-remove"></i>
+				</div>
+				<form role="form">
+					<input type="text" class="form-control" id="name" placeholder="姓名"/>
+					<input type="text" class="form-control" id="email" placeholder="Email"/>
+					<textarea class="form-control" rows="5" id="comment" placeholder="意見"></textarea>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div>
+		</div>
 		<div id="sec1" class="sections">
 			<div class="form-group">
 				<input class="form-control input-lg" id="inputlg" type="text" placeholder="Search..." />

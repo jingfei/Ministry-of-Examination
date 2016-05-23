@@ -5,6 +5,63 @@
 	padding: 0;
 }
 
+#dialog {
+	#dialog-title {
+		position: fixed;
+		bottom: 0;
+		right: 5px;
+		padding: 5px 15px;
+		color: #fff;
+		width: 200px;
+		background: #B13501;
+		border-top: 1px solid $text;
+		border-left: 1px solid $text;
+		border-right: 1px solid $text;
+		cursor: pointer;
+		z-index: 10;
+		i { color: #8ab325; }
+	}
+
+	#dialog-content {
+		display: none;
+		border-top: 1px solid $text;
+		border-left: 1px solid $text;
+		border-right: 1px solid $text;
+		background: #ededed;
+		z-index: 10;
+		position: fixed;
+		margin: 0;
+		bottom: 0;
+		right: 5px;
+		width: 400px;
+		text-align: center;
+		.glyphicon-remove {
+			color: #fff;
+			float: right;
+			cursor: pointer;
+		}
+		input,textarea {
+			margin: 10px 0;
+		}
+		button {
+			background: #B13501;
+			border: none;
+			color: #fff;
+		}
+		div {
+			width: 100%;
+			text-align: left;
+			background: #B13501;
+			color: white;
+			i { color: #8ab325; }
+			padding: 5px 15px;
+		}
+		form {
+			padding: 20px 15px ;
+		}
+	}
+}
+
 .sections {
 	padding: 90px 10px 10px;
 }
