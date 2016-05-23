@@ -35,11 +35,6 @@
 		right: 5px;
 		width: 400px;
 		text-align: center;
-		.glyphicon-remove {
-			color: #fff;
-			float: right;
-			cursor: pointer;
-		}
 		input,textarea {
 			margin: 10px 0;
 		}
@@ -48,13 +43,18 @@
 			border: none;
 			color: #fff;
 		}
-		div {
+		#dialog-content-title {
+			cursor: pointer;
 			width: 100%;
 			text-align: left;
 			background: #B13501;
 			color: white;
 			i { color: #8ab325; }
 			padding: 5px 15px;
+			.glyphicon-remove {
+				color: #fff;
+				float: right;
+			}
 		}
 		form {
 			padding: 20px 15px ;
@@ -72,10 +72,28 @@
 	background-position: center;
 	height: 100%;
 	margin: 0;
+	#iconTitle {
+		position: absolute;
+		top: 25%;
+		left: 25%;
+		font-size: 30px;
+		background: rgba(255,255,255,.6);
+		min-width: 50%;
+		text-align: center;
+		img {
+			display: inline-block;
+		}
+		.icon-text {
+			text-align: left;
+			display: inline-block;
+			vertical-align: middle;
+			padding: 6px 5px 4px;
+		}
+	}
 
 	.form-group {
 		position: absolute;
-		top: 45%;
+		top: 50%;
 		left: 25%;
 		width: 50%;
 
