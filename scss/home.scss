@@ -87,7 +87,50 @@
 			height: 60px;
 		}
 	}
+}
 
+#sec2 {
+	min-height: 100%;
+	div {
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		font-size: 20px;
+		&.doubleH {
+			padding: 20% 0;
+		}
+		&.singleH {
+			padding: calc(5% - 12px) 0;
+		}
+		&.innerH {
+			padding: 30% 0;
+		}
+	}
+	#bob-1 {
+		background-image: url("../images/bob-1.png");
+		padding-left: 40%;
+		font-size: 1.5em;
+	}
+	#bob-2 {
+		background-image: url("../images/bob-2.png");
+		padding-left: 50%;
+		font-size: 1em;
+	}
+	#bob-3 {
+		background-image: url("../images/bob-3.png");
+		padding-left: 35%;
+		font-size: 2em;
+	}
+	#bob-4 {
+		background-image: url("../images/bob-4.png");
+		padding-left: 30%;
+		font-size: 1.2em;
+	}
+	#bob-5 {
+		background-image: url("../images/bob-5.png");
+		padding-left: 8%;
+		font-size: 2.5em;
+	}
 }
 
 #sec3 {
