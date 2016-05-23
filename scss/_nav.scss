@@ -29,6 +29,9 @@
 	
 	.navbar-nav {
 		height: 80px;
+		@media all and (max-width: 767px) {
+			height: initial;
+		}
 		> li {
 			height: 100%;
 			border-left: 2px solid #ccc;
